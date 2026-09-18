@@ -164,8 +164,10 @@
 <script>
 (function () {
   // ---- Config -------------------------------------------------------------
-  // Point this at the collector. Same-origin by default (server/app.py serves this page).
-  var ENDPOINT = window.SURVEY_ENDPOINT || '/api/feedback';
+  // Where answers go. Paste the Google Apps Script web app URL (ends in /exec)
+  // from sheets/README.md. Leave as '/api/feedback' only if you self-host server/app.py.
+  var SURVEY_ENDPOINT = '/api/feedback';
+  var ENDPOINT = window.SURVEY_ENDPOINT || SURVEY_ENDPOINT;
 
   var OPTIONS = {
     use_cases: [
@@ -266,9 +268,13 @@
   }
   function send(partial) {
     return fetch(ENDPOINT, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload(partial)), keepalive: true
-    }).then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res; });
+      // text/plain avoids a CORS preflight, which Apps Script cannot answer. Both backends parse the JSON body.
+      method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload(partial)), keepalive: true, redirect: 'follow'
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json().then(function (j) { if (j && j.ok === false) throw new Error(j.error || 'rejected'); return j; });
+    });
   }
 
   // Record the rating from the email tap immediately, so a bounce still counts.
