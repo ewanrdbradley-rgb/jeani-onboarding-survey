@@ -1,0 +1,11 @@
+Quick one: how's Jeani so far?
+
+Tap a number (takes about a minute):
+
+  1 - Not for me   {{SURVEY_URL}}?r=1&u={{USER_ID}}&src=onboarding_email
+  2                {{SURVEY_URL}}?r=2&u={{USER_ID}}&src=onboarding_email
+  3                {{SURVEY_URL}}?r=3&u={{USER_ID}}&src=onboarding_email
+  4                {{SURVEY_URL}}?r=4&u={{USER_ID}}&src=onboarding_email
+  5 - Love it      {{SURVEY_URL}}?r=5&u={{USER_ID}}&src=onboarding_email
+
+Or just reply to this email. A real person reads every one.

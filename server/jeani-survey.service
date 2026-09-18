@@ -1,0 +1,23 @@
+# systemd user unit for the survey collector.
+# Install (same pattern as jeani-analytics on the VPS):
+#   mkdir -p ~/.config/systemd/user
+#   cp server/jeani-survey.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now jeani-survey.service
+#   loginctl enable-linger $USER   # keeps user services running after logout
+[Unit]
+Description=Jeani onboarding survey collector
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/jeani-onboarding-survey
+Environment=PORT=8787
+Environment=SURVEY_DB=%h/jeani-onboarding-survey/data/feedback.db
+Environment=SURVEY_CORS_ORIGIN=https://feedback.jeanihealth.com
+EnvironmentFile=%h/jeani-onboarding-survey/.env
+ExecStart=/usr/bin/python3 %h/jeani-onboarding-survey/server/app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,6 @@
+data/*.db
+data/*.db-journal
+data/*.csv
+__pycache__/
+.env
+.DS_Store

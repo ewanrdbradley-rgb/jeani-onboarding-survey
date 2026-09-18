@@ -1,0 +1,5 @@
+# Reverse proxy with automatic HTTPS. Only needed if nothing else already
+# terminates TLS on the VPS. Point DNS: feedback.jeanihealth.com -> 204.168.196.206
+feedback.jeanihealth.com {
+    reverse_proxy 127.0.0.1:8787
+}
