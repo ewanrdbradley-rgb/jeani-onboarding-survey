@@ -2,6 +2,10 @@
 
 A one-minute product feedback survey that lives inside the onboarding email. Answers land in a Google Sheet.
 
+**Live:** page at https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/ (published from `survey/` by GitHub Actions on every push to `main`). Answers go to the "Jeani onboarding feedback" Google Sheet via its bound Apps Script. Ready-to-paste email block with the live URL filled in: `email/onboarding-snippet.ready.html` (and `.ready.txt`).
+
+The repo is public because GitHub Pages on the free plan needs that. It holds nothing secret: the Apps Script URL is visible to anyone who opens the page anyway, and the Sheet itself stays private.
+
 - `email/onboarding-snippet.html` — the block to paste into the onboarding email. Five one-tap rating buttons, each a plain link. Plain-text version in `onboarding-snippet.txt`.
 - `survey/index.html` — the mobile-first landing page. Reads the rating from the link, asks five tap-only questions plus one optional free-text question, and posts the answers.
 - `sheets/Code.gs` — Google Apps Script that receives the answers and writes one row per response to your Sheet, with a live Summary tab. Setup in `sheets/README.md`.

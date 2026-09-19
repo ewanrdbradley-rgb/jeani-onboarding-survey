@@ -1,0 +1,11 @@
+Quick one: how's Jeani so far?
+
+Tap a number (takes about a minute):
+
+  1 - Not for me   https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=1&src=onboarding_email
+  2                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=2&src=onboarding_email
+  3                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=3&src=onboarding_email
+  4                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=4&src=onboarding_email
+  5 - Love it      https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=5&src=onboarding_email
+
+Or just reply to this email. A real person reads every one.
