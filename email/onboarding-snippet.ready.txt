@@ -1,11 +1,11 @@
-Quick one: how's Jeani so far?
+How's Jeani reading for you so far?
 
-Tap a number (takes about a minute):
+One tap. A minute more if you'd like to say why.
 
-  1 - Not for me   https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=1&src=onboarding_email
-  2                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=2&src=onboarding_email
-  3                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=3&src=onboarding_email
-  4                https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=4&src=onboarding_email
-  5 - Love it      https://ewanrdbradley-rgb.github.io/jeani-onboarding-survey/?r=5&src=onboarding_email
+  1  not for me     https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=1&src=onboarding_email
+  2                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=2&src=onboarding_email
+  3                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=3&src=onboarding_email
+  4                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=4&src=onboarding_email
+  5  working well   https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=5&src=onboarding_email
 
-Or just reply to this email. A real person reads every one.
+Or reply to this email. A person reads every one.

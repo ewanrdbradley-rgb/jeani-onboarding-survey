@@ -12,7 +12,7 @@ No server. The survey page posts straight to a Google Apps Script web app that i
    - Execute as: **Me**
    - Who has access: **Anyone** (the page posts anonymously; the sheet itself stays private)
    Click Deploy and copy the URL ending in `/exec`.
-6. Open `survey/index.html` and paste that URL into `SURVEY_ENDPOINT` near the top of the script.
+6. Open `survey/memberfeedback/index.html` and paste that URL into `SURVEY_ENDPOINT` near the top of the script.
 7. Host the page (see the main README: GitHub Pages is wired up) and test with `?r=4&src=test`.
 
 ## Notes
