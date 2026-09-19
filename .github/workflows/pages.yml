@@ -1,10 +1,10 @@
-# Publishes survey/ to GitHub Pages on every push to main.
+# Publishes pages/ (redirects to www.jeanihealth.com/memberfeedback) on every push to main. The page source stays in survey/.
 # One-time: repo Settings -> Pages -> Source: "GitHub Actions".
 name: Publish survey page
 on:
   push:
     branches: [main]
-    paths: ['survey/**', '.github/workflows/pages.yml']
+    paths: ['pages/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: survey
+          path: pages
       - id: deployment
         uses: actions/deploy-pages@v4

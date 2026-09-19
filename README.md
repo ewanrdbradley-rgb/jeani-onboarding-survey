@@ -32,7 +32,7 @@ Follow `sheets/README.md`. You end up with a web app URL ending in `/exec`.
 ### 2. The survey page
 
 1. Paste the `/exec` URL into `SURVEY_ENDPOINT` near the top of the script in `survey/memberfeedback/index.html`.
-2. GitHub Pages still publishes `survey/` on every push to `main`, but only as a redirect to the website address now.
+2. GitHub Pages publishes `pages/` on every push to `main`: two redirect stubs that forward the old github.io links to the website address, keeping the query string.
 3. To publish a change, copy `survey/memberfeedback/index.html` (and `j-mark.png` if it changed) to `jeani-website/public/memberfeedback/` in the website repo and open a PR against `main`. Vercel deploys on merge.
 4. Open the page with `?r=4&src=test`, submit, and watch the row appear in the Sheet.
 
