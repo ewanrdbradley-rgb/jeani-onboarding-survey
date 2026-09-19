@@ -2,10 +2,10 @@ How's Jeani reading for you so far?
 
 One tap. A minute more if you'd like to say why.
 
-  1  not for me     https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=1&src=onboarding_email
-  2                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=2&src=onboarding_email
-  3                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=3&src=onboarding_email
-  4                 https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=4&src=onboarding_email
-  5  working well   https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/?r=5&src=onboarding_email
+  1  not for me     https://www.jeanihealth.com/memberfeedback?r=1&src=onboarding_email
+  2                 https://www.jeanihealth.com/memberfeedback?r=2&src=onboarding_email
+  3                 https://www.jeanihealth.com/memberfeedback?r=3&src=onboarding_email
+  4                 https://www.jeanihealth.com/memberfeedback?r=4&src=onboarding_email
+  5  working well   https://www.jeanihealth.com/memberfeedback?r=5&src=onboarding_email
 
 Or reply to this email. A person reads every one.

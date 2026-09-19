@@ -3,7 +3,7 @@
 # Usage: scripts/build_email.sh [SURVEY_URL]
 set -euo pipefail
 cd "$(dirname "$0")/.."
-LIVE="${1:-https://ewanrdbradley-rgb.github.io/jeanihealth/memberfeedback/}"
+LIVE="${1:-https://www.jeanihealth.com/memberfeedback}"
 for f in email/onboarding-snippet.html email/onboarding-snippet.txt; do
   out="${f%.*}.ready.${f##*.}"
   sed -e "s|{{SURVEY_URL}}|$LIVE|g" -e 's|&u={{USER_ID}}||g' \
